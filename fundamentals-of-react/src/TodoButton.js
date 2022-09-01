@@ -1,11 +1,10 @@
-import react from "react";
+import React from 'react';
+import './TodoButton.css';
 
-function TodoButton(){
-    return(
-        <button>+</button>
-    );
+function TodoButton(props) {
+  return (
+    <button className="CreateTodoButton">+</button>
+  );
 }
 
-export { 
-    TodoButton
-};
+export { TodoButton };
