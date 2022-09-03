@@ -2,14 +2,14 @@ import React from 'react';
 import './TodoButton.css';
 
 function TodoButton(props) {
-    const onClickButton = (msg) => {
-        alert(msg)
+    const onClickButton = () => {
+        props.setOpenModal(true);
     };
 
   return (
     <button 
         className="CreateTodoButton"
-        onClick={() => onClickButton('Aqui debería abrir un modal')}
+        onClick={onClickButton}
     >
         +
     </button>
@@ -17,3 +17,5 @@ function TodoButton(props) {
 }
 
 export { TodoButton };
+
+
