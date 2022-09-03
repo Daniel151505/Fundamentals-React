@@ -6,6 +6,7 @@ import { TodoItem } from "../TodoItem/index.js";
 import { TodoButton} from "../TodoButton/index.js";
 import { TodoContext } from '../TodoContext';
 import { Modal } from '../Modal';
+import { TodoForm } from '../TodoForm';
 
 function AppUI() {
 
@@ -40,7 +41,7 @@ function AppUI() {
 
                 { !!openModal && (
                     <Modal>
-                        <p>{searchedTodos[0]?.text}</p>
+                        <TodoForm/>
                     </Modal>
                 )}
 
